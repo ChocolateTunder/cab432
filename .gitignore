@@ -1,0 +1,9 @@
+# Logs
+logs
+*.logs
+
+# Modules folder
+node_modules
+
+# dotenv environment variables file for API keys/secrets
+.env

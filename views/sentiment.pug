@@ -1,0 +1,8 @@
+extends layout
+
+block content 
+    h1 Sentiment Analysis
+    each sentiment in sentiments
+        h1 Text=!{sentiment.text}
+        h2 Sentiment=!{sentiment.view}
+        h3 Date=!{sentiment.date}

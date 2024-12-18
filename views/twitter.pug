@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h2 Results of the search for keyword '!{queries[0].keyword}'
+    each query in queries
+      h3 Tweet Number: !{query.tweet_num}
+      h3 Tweeted At: !{query.created_at}
+      h3 Text: !{query.text}
+      br
+      
+    h1 Sentimental Analysis:
+    each sentiment in sentiments 
+      h4 Tweet Number: !{sentiment.num}
+      h4 Score: !{sentiment.score}
+      h4 Tokens: !{sentiment.tokens}
+      h4 Words: !{sentiment.words}
+      h4 Positive: !{sentiment.positive}
+      h4 Negative: !{sentiment.negative}
+      br
